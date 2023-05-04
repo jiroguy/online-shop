@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Full Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Full Cart Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="homepage.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+      <div class="card">
+        
+        <img src="https://cdnprod.mafretailproxy.com/sys-master-root/h28/hcf/12069233262622/6958_main.jpg_480Wx480H" alt="lipton" style="width:50%">
+        <h1>Lipton Tea Black 100g</h1>
+        <p class="price">20.50AED</p>
+        <p><img src="https://logolook.net/wp-content/uploads/2021/03/Amazon-logo.png" alt="lipton" style="width:30%"></p>
+        <p class="price">15.26AED</p>
+        <a href="https://www.amazon.ae/Lipton-Yellow-Label-Black-Teabags/dp/B07XFCJH5C/ref=sr_1_5?crid=24B4MV5JSLF49&keywords=lipton+tea+bags+100&qid=1683009583&sprefix=lipton+tea+bags%2Caps%2C217&sr=8-5" target="_blank"><p><button>go to shop</button></p></a>
+      
+        <p><img src="https://m.eyeofdubai.ae/news_images/2018/09/badb53734c8e.png" alt="lipton" style="width:30%"></p>
+        <p class="price">20.50AED</p>
+        <a href="https://www.noon.com/uae-en/search/?q=lipton%20black%20tea" target="_blank"><p><button>go to shop</button></p></a>
+        
+        <p><img src="https://getlogovector.com/wp-content/uploads/2020/09/carrefour-uae-logo-vector.png" alt="lipton" style="width:30%"></p>
+        <p class="price">20.70AED</p>
+        <a href="https://www.carrefouruae.com/mafuae/en/black-bags/lipton-yl-tea-bags-2gx100-s/p/6958?list_name=search%7Clipton_back_tea" target="_blank"><p><button>go to shop</button></p></a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/91Akt25UP8L._AC_SY445_.jpg" alt="nezo" style="width:30%">
+        <h1>Nezo Iodine table salt 125g</h1>
+        <p class="price">5.00AED</p>
+        <p><img src="https://logolook.net/wp-content/uploads/2021/03/Amazon-logo.png" alt="nezo" style="width:30%"></p>
+        <p class="price">3.22AED</p>
+        <a href="https://www.amazon.ae/Nezo-Table-Salt-Iodine-125g/dp/B07NF7RKD4/ref=sr_1_4?crid=289YJXQGO5V1E&keywords=salt+nezo&qid=1683009727&sprefix=salt%2Caps%2C400&sr=8-4" target="_blank"><p><button>go to shop</button></p></a>
+        
+        <p><img src="https://getlogovector.com/wp-content/uploads/2020/09/carrefour-uae-logo-vector.png" alt="nezo" style="width:30%"></p>
+        <p class="price">3.20AED</p>
+        <a href="https://www.carrefouruae.com/mafuae/en/salt/nezo-salt-iodized-red-125gr/p/606880?list_name=search%7CNezo_Table_Salt_With_Iodine_125g" target="_blank"><p><button>go to shop</button></p></a>
+        
+        <p><img src="https://image.similarpng.com/very-thumbnail/2020/06/Logo-lulu-saudi-hypermarket-free-download-PNG.png" alt="nezo" style="width:30%"></p>
+        <p class="price">3.20AED</p>
+        <a href="https://www.luluhypermarket.com/en-ae/nezo-iodized-table-salt-125-g/p/386486" target="_blank"><p><button>go to shop</button></p></a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="card">
+        <div class="panel panel-primary">
+          <div class="panel-heading"></div>
+        <img src="https://cdnprod.mafretailproxy.com/sys-master-root/h36/h38/13243340947486/425343_main.jpg_480Wx480H" alt="grapes" style="width:30%">
+        <h1>Red seedless grapes</h1>
+        <p class="price">8.97AED</p>
+        <p><img src="https://getlogovector.com/wp-content/uploads/2020/09/carrefour-uae-logo-vector.png" alt="grapes" style="width:30%"></p>
+        <p class="price">8.97AED</p>
+        <a href="https://www.carrefouruae.com/mafuae/en/grapes/grapes-red-seedless-import/p/425343?list_name=category%7CF11600000" target="_blank"><p><button>go to shop</button></p></a>
+        
+        <p><img src="https://logolook.net/wp-content/uploads/2021/03/Amazon-logo.png" alt="grapes" style="width:30%"></p>
+        <p class="price">15.22AED</p>
+        <a href="https://www.amazon.ae/Fresh-Grapes-Red-Globe-500G/dp/B09JNX9HXQ/ref=asc_df_B09JNX9HXQ/?tag=googleshopp09-21&linkCode=df0&hvadid=406851123590&hvpos=&hvnetw=g&hvrand=5559924247839312783&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1000013&hvtargid=pla-1870771063171&psc=1" target="_blank"><p><button>go to shop</button></p></a>
+        
+        <p><img src="https://cdn.wowdeals.me/uploads/images/companies/23/logo/495x225/1619596958.png" alt="grapes" style="width:30%"></p>
+        <p class="price">8.00AED</p>
+        <a href="https://www.choithrams.com/en/catalogue/goodness-foods-red-seedless-grapes-500g_7062/" target="_blank"><p><button>go to shop</button></p></a>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+      <div class="card">
+        <img src="https://cdnprod.mafretailproxy.com/sys-master-root/h81/heb/12548704665630/351442_main.jpg_480Wx480H" alt="apple" style="width:30%">
+        <h1>Red apples</h1>
+        <p class="price">6.00AED</p>
+        <p><img src="https://getlogovector.com/wp-content/uploads/2020/09/carrefour-uae-logo-vector.png" alt="apple" style="width:30%"></p>
+        <p class="price">6.00AED</p>
+        <a href="https://www.carrefouruae.com/mafuae/en/apple/apple-red/p/351442" target="_blank"><p><button>go to shop</button></p></a>
+        
+        <p><img src="https://image.similarpng.com/very-thumbnail/2020/06/Logo-lulu-saudi-hypermarket-free-download-PNG.png" alt="apple" style="width:30%"></p>
+        <p class="price">9.00AED</p>
+        <a href="https://www.luluhypermarket.com/en-ae/apple-red-usa-1kg/p/19047_EA" target="_blank"><p><button>go to shop</button></p></a>
+        
+        <p><img src="https://cdn.wowdeals.me/uploads/images/companies/23/logo/495x225/1619596958.png" alt="apple" style="width:30%"></p>
+        <p class="price">12.00AED</p>
+        <a href="https://www.choithrams.com/en/catalogue/apple-red-usa_16101/" target="_blank"><p><button>go to shop</button></p></a>
+        
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+        <div class="card">
+        <img src="https://z.nooncdn.com/tr:n-t_800/v1680513544/N46390801A_1.jpg" alt="Cereals" style="width:50%">
+        <h1>Cereals Coco Pops Fill 350g</h1>
+        <p class="price">23.75AED</p>
+        <p><img src="https://m.eyeofdubai.ae/news_images/2018/09/badb53734c8e.png" alt="Cereals" style="width:30%"></p>
+        <p class="price">23.75AED</p>
+        <a href="https://daily.noon.com/uae-en/cereals-coco-pops-fill-350g/N46390801A/p?o=e43aa5d3bb7c563c" target="_blank"><p><button>go to shop</button></p></a>
+      
+        <p><img src="https://logolook.net/wp-content/uploads/2021/03/Amazon-logo.png" alt="nezo" style="width:30%"></p>
+        <p class="price">19.25AED</p>
+        <a href="https://www.amazon.ae/Kelloggs-Coco-Pops-Fills-350g/dp/B09B63B3KK/ref=asc_df_B09B63B3KK/?tag=googleshopp09-21&linkCode=df0&hvadid=406607430630&hvpos=&hvnetw=g&hvrand=10640624150843869991&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1000013&hvtargid=pla-1411577380504&psc=1" target="_blank"><p><button>go to shop</button></p></a>
+      
+        <p><img src="https://getlogovector.com/wp-content/uploads/2020/09/carrefour-uae-logo-vector.png" alt="apple" style="width:30%"></p>
+        <p class="price">21.50AED</p>
+        <a href="https://www.carrefouruae.com/mafuae/en/kids-cereals/kellogg-s-coco-pops-fills-350g/p/1799737" target="_blank"><p><button>go to shop</button></p></a>
+        
+      </div>
+      </div>
+    </div>
+    
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <p>About Us</p>
+  <p>Author: Jiro Sia<br>
+  <a href="mailto:jiro.sia27@gmail.com">jiro.sia27@gmail.com</a></p>
+  <h4>for more information contact to our nearest office</h4>
+  <h4> Osaka - Tokyo</h4>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Full Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+/* CSS for main section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://t3.ftcdn.net/jpg/03/35/61/78/360_F_335617818_D6XfmNhtCyDRTOvK9GXFkNYs3nyLKvfO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.achievements .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.achievements .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.achievements .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302f49;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Full Cart Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="homepage.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</nav>
+
+<main>
+  <div class="intro">
+    <h1> online Store</h1>
+    <p>Online grocery shopping has become increasingly popular in recent years, especially during the COVID-19 pandemic, where many people have opted for online shopping to reduce exposure to the virus. As a result, the online grocery industry has seen significant growth and continues to expand.</p>
+    
+    <button>Shop Now</button>
+  </div>
+  <div class="achievements">
+    <div class="work">
+      <i class="fas fa-atom"></i>
+      <p class="work-heading">Best sellers</p>
+      <img src="https://cdnprod.mafretailproxy.com/sys-master-root/h28/hcf/12069233262622/6958_main.jpg_480Wx480H" alt="lipton" style="width:50%">
+      <h3>Lipton Tea Black </h3>
+      <h3 class="price">20.50AED</h3>
+    </div>
+    <div class="work">
+      <i class="fas fa-skiing"></i>
+      <p class="work-heading">Best sellers</p>
+      <img src="https://m.media-amazon.com/images/I/71gG1f+1jSL._AC_SX679_.jpg" alt="nescafe" style="width:30%">
+      <h3>Nescafe Gold </h3>
+      <h3 class="price">40.00AED</h3>
+    </div>
+    <div class="work">
+      <i class="fas fa-ethernet"></i>
+      <p class="work-heading">Best sellers</p>
+      <img src="https://m.media-amazon.com/images/I/71G3CR6xkIL._AC_SX679_.jpg" alt="milk" style="width:50%">
+        <h3>Rainbow Evaporated Milk Portions</h3>
+        <h3 class="price">5.50AED</h3>
+    </div>
+  </div>
+  <div class="about-me">
+    <div class="about-me-text">
+      <h2>About Us</h2>
+      <p>The 'Full Cart Store' is an Artificial Intelligent multi-agent shopping system that provides the right product at an optimum price and increases customers’ productivity. Retail owners will understand the needs of the group of customers through online surveys and feedback through a secured system that can increase sales.</p>
+      <p>It was created because traditional customers are entirely dependent on the manual process of buying the product, and a tremendous amount of time and effort is wasted on this. Traditional retailers have difficulty increasing their sales because they are only limited to the specific location of their stores and miss the opportunity to sell their products to customers living in a different geography. While online customers experience bad product quality especially if they do not have specified product descriptions, photos, and product reviews to serve as the basis for their purchase decision. There is also a disparity in product prices among online sellers and it will take a massive amount of time for customers to browse different websites for price comparison. On the side of retail owners, most of them are blind to what their customers want and they cannot classify to which specific kind of customers they should offer their product due to the absence of data and relevant analysis that would lead them to align with their product development and promotions. Likewise, they also need to know how their total customer experience to improve their service further. Finally, customers are hesitant to take the first step of placing online orders, and the possibility of their personal information being compromised due to unsecured websites.</p>
+      <p>Therefore, This online shopping system has a list of products with a specific description to identify their brand, product identity, variant, size, and photos. The system is capable of providing prices from different online stores. A database was created for the website to store information of customers along with the purchased products and their feedback for the goods and services so that these can be analyzed and evaluated to know the group of customers that patronize it for product development and to uplift customer service.  The website is compliant with the requirements to secure the personal data privacy of the customers. Finally, the website has a firewall and relevant policies to prevent it from cyber-attacks.</p>
+      <p>The ‘Full Cart Store’ is a project developed to benefit customers, retailers, and owners in buying and selling items. It is a method of buying goods and services from merchants who sell on the internet and customers can purchase anything from companies that provide their items online. E-shopping has been widely used mainly as it permits consumers to buy numerous things comfortably from their office or home and shun away from laborious shopping thru brick-and-mortar stores. It helps customers to buy products at the shop anywhere through the internet using their personal computers. In this way, customers can get online shopping and home delivery services.</p>
+
+    </div>
+    
+  </div>
+</main>
+<br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  
+  <p>Author: Jiro Sia<br>
+  <a href="mailto:jiro.sia27@gmail.com">jiro.sia27@gmail.com</a></p>
+  <h4>for more information contact to our nearest office</h4>
+  <h4> Osaka - Tokyo</h4>
+</footer>
+
+</body>
+</html>
